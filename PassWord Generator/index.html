@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <div class="images">
+            <div class="big-img">
+                <img src="./Accets/3d-female-character-looking-online-with-help-search-bar_23-2148938909-removebg-preview.png" alt="">
+
+            </div>
+            <img  class="small-img" src="./Accets/3d-illustration-security-lock-png.webp" alt="img">
+            <img src="./Accets/f438b81f6954b407f1d37a2ac2b9aae7-removebg-preview.png" alt="" class="s-img">
+        </div>
+        <div class="container">
+            <div class="heading">Password Generator</div>
+            <div class="box1">
+                <div class="text">
+                    <input  class="passGenerate" placeholder="Password" readonly data-passwordDisplay>
+
+                    <!-- <span copiedMsg></span> -->
+                    <button data-copy class="bt">
+                        <span  class="tooltip" data-copyMsg></span>
+                        <img src="./Accets/copy.svg" alt="copy" >
+                    </button>
+                    <!-- <img src="./Accets/copy.svg" alt="copy" dataCopy> -->
+
+                </div>
+            </div>
+            <!-- All Content  -->
+            <div class="box2">
+                <div class="sub-box">
+                    <h2 class="SubHead">Password Length</h2>
+                    <p data-lengthNumber>0</p>
+
+                </div>
+               
+                <!-- Slider -->
+                <div class="slider">
+                    <input type="range" min="1" max="20"  class="slide" data-lengthSlider>
+                </div>
+                <!-- Checkbox -->
+                <div class="checkBox" >
+                    <input type="checkbox" class="c1" id="uppercase">
+                    <label for="UpperCase">Include Uppercase Letters</label>
+                </div>
+                <div class="checkBox" >
+                    <input type="checkbox" class="c1" id="lowercase">
+                    <label for="LowerCase">Include Lowercase Letters</label>
+                </div>
+                <div class="checkBox" >
+                    <input type="checkbox" class="c1" id="numbers">
+                    <label for="Number">Include Numbers</label>
+                </div>
+                <div class="checkBox" >
+                    <input type="checkbox" class="c1" id="symbols">
+                    <label for="Symbol">Include Symbols</label>
+                </div>
+                <!-- Strength section -->
+                <div class="strength">
+                    <p>Strength</p>
+                    <div class="circle" data-indicator>
+
+                    </div>
+                </div>
+
+                <button  class="generateButton">
+                    <p>GENERATE PASSWORD</p>  
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
